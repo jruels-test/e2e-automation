@@ -97,5 +97,5 @@ jobs:
         path: ${{ env.TERRAFORM_DIR }}
 
     - name: Terraform Destroy
-      run: terraform apply -auto-approve tfplan
+      run: terraform destroy -auto-approve
       working-directory: ${{ env.TERRAFORM_DIR }} 
